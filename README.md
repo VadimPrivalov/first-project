@@ -3,4 +3,4 @@
 
 *Проект:*
 - sprint-1__startkit.
-- sprint-2__startkit.
+- sprint-2-sources.

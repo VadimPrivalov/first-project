@@ -1,8 +1,0 @@
-.place__image {
-  position: relative;
-  width: 100%;
-  /* max-width: 440px;
-  max-height: 440px; */
-  align-self: start;
-  object-fit: contain;
-}

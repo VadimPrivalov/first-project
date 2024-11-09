@@ -1,0 +1,36 @@
+.cover {
+  position: relative;
+  /* Фоновое изображение загружается на маленьких экранах*/
+  background-image: url(../../images/cover-trains.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* Cоотношение ширина/высота фоновой картинки, работает во всех современных браузерах */
+  /* aspect-ratio: 1.6; Автопроверка Практикума не пропускает такое свойство,поэтому высота блока задана менее гибко через min-height у cover__text */
+}
+
+/* Оверлей */
+.cover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2a2c2f;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+/* Затемнение при наведении на весь блок */
+.cover:hover::before {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .cover {
+    /* Фоновое изображение загружается на больших экранах*/
+    background-image: url(../../images/cover-trains.jpg);
+  }
+}

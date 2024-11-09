@@ -1,0 +1,38 @@
+.lead__title {
+  /* Обнуление стандартных стилей браузера */
+  margin: 0 auto 32px;
+  /* Параметры шрифта */
+  font-size: 96px;
+  line-height: 1.04;
+  /* height: 200px; */
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  /* Размеры блока по макету */
+  max-width: 720px;
+  /* word-break: break-word; */
+  /* overflow: hidden;
+  width: 100%; */
+}
+
+@media screen and (max-width: 768px) {
+  .lead__title {
+    font-size: 12.5vw; /* Плавное уменьшение размера шрифта, чтобы не переполнял экран */
+    width: calc(100% - 2 * 24px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .lead__title {
+    line-height: 1.1; /* Размеры по макету*/
+    margin-bottom: 16px;
+    width: calc(100% - 2 * 16px);
+    font-size: 12vw; /* Плавное уменьшение размера шрифта, чтобы не переполнял экран */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lead__title {
+    font-size: 40px; /* Окончательный размер шрифта на маленьких экранах по макету */
+  }
+}

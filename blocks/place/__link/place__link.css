@@ -1,0 +1,17 @@
+.place__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: underline;
+  color: #ffffff;
+  transition: opacity 0.3s;
+  /* При переполнении, особенно в названии ссылки,
+    текст будет принудильно переноситься,
+    чтобы не разрывать верстку */
+  /* word-break: break-word; Не самое лучше решение разрешать перенос слов по буквам, из за этого правила может возникнуть некорректное отображение. Правила группы word-break следует удалить из проекта. */
+}
+
+.place__link:hover {
+  opacity: 0.8;
+}

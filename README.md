@@ -1,7 +1,7 @@
 # Проектная работа Место (Project  Mesto)
 
 *Description*
-The project is made with *JavaScript*.
+The project is made with "JavaScript".
 
 *Функционал*
 1. Adding cards
